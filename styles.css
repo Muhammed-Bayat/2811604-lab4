@@ -1,10 +1,8 @@
 .spinner {
-    /* Your styling */ 
-    color:blueviolet;
     width: 40px;
     height: 40px;
     border: 4px solid #ccc;
-    border-top: 4px solid black;
+    border-top: 4px solid blueviolet;
     border-radius: 50%;
     margin: 20px auto;
     animation: spin 1s linear infinite; /* Required */
@@ -15,24 +13,46 @@
     100% { transform: rotate(360deg); }
 }
 
-.country-card{
-    background: blue;
+.country-card {
+    background: #ffffff;
     padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    margin-top: 16px;
 }
 
-.border-grid{
+.border-grid {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;         /* wraps nicely on smaller screens */
+    gap: 12px;               /* cleaner spacing */
+    margin-top: 16px;
 }
 
-.error{
-    color:red;
+.border-grid article {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
     padding: 12px;
+    min-width: 160px;
 }
 
-.hidden{
+.border-grid h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+}
+
+.error {
+    color: #b00020;
+    background: #ffe5ea;
+    border: 1px solid #ffb3c0;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.hidden {
     display: none;
 }
