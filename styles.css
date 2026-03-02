@@ -26,8 +26,8 @@
     align-items: stretch;
     justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;         /* wraps nicely on smaller screens */
-    gap: 12px;               /* cleaner spacing */
+    flex-wrap: wrap;         
+    gap: 12px;               
     margin-top: 16px;
 }
 
